@@ -1,0 +1,70 @@
+/** GENERAL **/
+body {
+	font-family: Verdana, sans-serif;
+	min-height: 740px;
+	/* customize_body-background */ background-color: #e8e8e8; /* customize_body-background */
+}
+
+/** STEP STYLES **/
+section {
+	width: 800px;
+	font-size: 1em;
+	min-height: 500px;
+	/* customize_section-background */ background-color: #fafafa; /* customize_section-background */
+
+	display: block;
+    padding: 40px 60px;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .3);
+
+	/* customize_text-color */ color: #424242; /* customize_text-color */
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	-ms-box-sizing:     border-box;
+	-o-box-sizing:      border-box;
+	box-sizing:         border-box;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition:    opacity 1s;
+	-ms-transition:     opacity 1s;
+	-o-transition:      opacity 1s;
+	transition:         opacity 1s;
+}
+
+section h1 {
+	/* customize_h1-color */ color: #3299BB; /* customize_h1-color */
+}
+
+section.noborder {
+	box-shadow: 0 0 0 #fff;
+	border: none;
+	background: transparent;
+	width: auto;
+	min-height: 1em;
+}
+
+/* fade out inactive slides */
+.is-not-edit-mode section:not(.active) {
+	opacity: 0.3;
+}
+
+footer {
+	color: #8c8c8c;
+	font-size: x-small;
+}
+.is-not-edit-mode footer {
+	position: absolute;
+	bottom: 5px;
+}
+footer span {
+	margin-right: 10px;
+}
+footer a {
+	color: #8c8c8c;
+}
+footer a:hover {
+	text-decoration: none;
+}
