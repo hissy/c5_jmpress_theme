@@ -21,17 +21,22 @@
 	</small></p>
 </footer>
 
+<?php  Loader::element('footer_required'); ?>
+
 <?php if (!$c->isEditMode()) { ?>
 <script type="text/javascript">
 $(function() {
     $('#jmpress').jmpress({
     	stepSelector: "section"
     });
+    $('.is-not-edit-mode footer').hover(function(){
+    	$(this).fadeTo("slow",1.0);
+    },function(){
+    	$(this).fadeTo("slow",0.0);
+    });
 });
 </script>
 <?php } ?>
-
-<?php  Loader::element('footer_required'); ?>
 
 </body>
 

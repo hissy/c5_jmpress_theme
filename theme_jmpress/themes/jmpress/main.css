@@ -1,5 +1,7 @@
 /** GENERAL **/
 body {
+	margin: 0;
+	padding: 0;
 	font-family: Verdana, sans-serif;
 	min-height: 740px;
 	/* customize_body-background */ background-color: #e8e8e8; /* customize_body-background */
@@ -8,7 +10,8 @@ body {
 /** STEP STYLES **/
 section {
 	width: 800px;
-	font-size: 1em;
+	font-size: 18px;
+	line-height: 1.6;
 	min-height: 500px;
 	/* customize_section-background */ background-color: #fafafa; /* customize_section-background */
 
@@ -36,6 +39,7 @@ section {
 
 section h1 {
 	/* customize_h1-color */ color: #3299BB; /* customize_h1-color */
+	font-size: 1.8em;
 }
 
 section.noborder {
@@ -43,7 +47,9 @@ section.noborder {
 	border: none;
 	background: transparent;
 	width: auto;
+	min-width: 600px;
 	min-height: 1em;
+	text-align: center;
 }
 
 /* fade out inactive slides */
@@ -54,10 +60,16 @@ section.noborder {
 footer {
 	color: #8c8c8c;
 	font-size: x-small;
+	padding: 10px 0;
+	width: 100%;
 }
 .is-not-edit-mode footer {
 	position: absolute;
-	bottom: 5px;
+	bottom: 0;
+	opacity: 0.0;
+}
+footer p {
+	margin: 0 10px;
 }
 footer span {
 	margin-right: 10px;
